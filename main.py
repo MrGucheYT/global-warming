@@ -67,7 +67,8 @@ def news(message):
         schedule.every().day.at("12:00").do(news)
         while True:
             schedule.run_pending()
-            time.sleep(1)
+            time.sleep(30)
 
 bot.polling()
+
 
